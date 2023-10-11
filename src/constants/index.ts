@@ -199,11 +199,11 @@ const projects = [
       "An amazing frontend application which displays the analysis(Price, Market Cap, Daily-Change) of top crypto-currencies along with the latest news.",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "redux",
         color: "green-text-gradient",
       },
       {

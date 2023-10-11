@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../style";
-import { github } from "../assets";
+import { github, forward } from "../assets";
 import { services } from "../constants";
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
@@ -29,7 +29,17 @@ const ProjectCard: React.FC<WorkCardProps> = ({ index, project }) => {
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
+            <div
+              onClick={() => window.open(project.hosted_link, "_blank")}
+              className=" bg-white w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={forward}
+                alt="source code"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
             <div
               onClick={() => window.open(project.source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"

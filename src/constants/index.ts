@@ -21,6 +21,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  veb,
+  SpendWise,
+  CryptoWorld,
+  UpstoneEstates,
 } from "../assets";
 
 export const navLinks = [
@@ -104,7 +108,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "Vebholic",
-    icon: starbucks,
+    icon: veb,
     iconBg: "#383E56",
     date: "Mar 2023 - Present",
     points: [
@@ -145,9 +149,31 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Upstone Estates",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web application that enables users to input their properties with images with an amazing dynamic dashboard and also we can watch the properties of other dealers.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: UpstoneEstates,
+    source_code_link: "https://github.com/DhruvKhandelwal21/Upstone-estate",
+    hosted_link: "https://upstone-estate-7c12.vercel.app",
+  },
+  {
+    name: "Spend Wise",
+    description:
+      "Web-based platform that allows users to login with complete authentication, add their expenses, incomes, search and analysis of expenditure through react-charts.",
     tags: [
       {
         name: "react",
@@ -162,34 +188,15 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: SpendWise,
+    source_code_link:
+      "https://github.com/DhruvKhandelwal21/Expense-Tracker-Frontend",
+    hosted_link: "https://expense-tracker-frontend-virid.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Cryptoworld",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An amazing frontend application which displays the analysis(Price, Market Cap, Daily-Change) of top crypto-currencies along with the latest news.",
     tags: [
       {
         name: "nextjs",
@@ -204,8 +211,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: CryptoWorld,
+    source_code_link: "https://github.com/DhruvKhandelwal21/Cryptoworld",
+    hosted_link: "https://master--cryptozworld.netlify.app/",
   },
 ];
 

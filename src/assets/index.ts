@@ -25,10 +25,14 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import veb from "./company/veb.jpg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import CryptoWorld from "./CryptoWorld.png";
+import SpendWise from "./SpendWise.png";
+import UpstoneEstates from "./UpstoneEstates.png";
+import forward from "./forward.png";
 
 export {
   logo,
@@ -59,4 +63,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  veb,
+  CryptoWorld,
+  UpstoneEstates,
+  SpendWise,
+  forward
 };

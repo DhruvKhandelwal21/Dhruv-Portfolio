@@ -9,6 +9,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import {isMobile} from 'react-device-detect'
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,11 +20,11 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {!isMobile&&<Tech />}
         <Works />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          {!isMobile&&<StarsCanvas />}
         </div>
       </div>
     </BrowserRouter>
